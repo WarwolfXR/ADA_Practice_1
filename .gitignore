@@ -1,0 +1,67 @@
+# Compiled object files
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Compiled binary files
+*.out
+*.exe
+*.elf
+*.a
+*.so
+*.dll
+
+# Debug files
+*.dSYM/
+*.d
+
+# Core dump
+core
+
+# IDE/editor folders and files
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Backup files
+*~
+*.swp
+*.swo
+*.bak
+
+# Logs
+*.log
+
+# Makefile/autotools
+Makefile
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+configure
+config.h
+config.log
+config.status
+aclocal.m4
+autom4te.cache/
+compile
+depcomp
+install-sh
+ltmain.sh
+missing
+Makefile.in
+configure.in
+configure.ac
+
+# Test coverage and profiling
+*.gcno
+*.gcda
+*.gcov
+*.prof
+
+# Build directory
+/build/
