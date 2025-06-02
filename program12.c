@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 int board[10], count = 1;
@@ -12,18 +13,6 @@ int place(int row, int col) {
     return 1;
 }
 
-// Backtracking to place queens
-void queen(int row, int n) {
-    for (int col = 1; col <= n; col++) {
-        if (place(row, col)) {
-            board[row] = col;
-            if (row == n)
-                printSolution(n);
-            else
-                queen(row + 1, n);
-        }
-    }
-}
 
 // Print board
 void printSolution(int n) {
@@ -39,6 +28,21 @@ void printSolution(int n) {
     }
     printf("\n");
 }
+
+// Backtracking to place queens
+void queen(int row, int n) {
+    for (int col = 1; col <= n; col++) {
+        if (place(row, col)) {
+            board[row] = col;
+            if (row == n)
+                printSolution(n);
+            else
+                queen(row + 1, n);
+        }
+    }
+}
+
+
 
 // Driver
 int main() {
